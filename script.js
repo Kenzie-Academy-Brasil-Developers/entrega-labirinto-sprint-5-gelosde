@@ -115,7 +115,7 @@ function novasdivs(){
         }
          if(posi[sima_baixo][direita_esquerda].className ==='final'){
           
-            venceu.innerHTML='Paraben! voce venceu!';
+            venceu.innerHTML='Parabens! voce venceu!';
             sima_baixo=guarda_sima_baixo;
             direita_esquerda=guarda_direita_esquerda;
             posi[sima_baixo][direita_esquerda]
