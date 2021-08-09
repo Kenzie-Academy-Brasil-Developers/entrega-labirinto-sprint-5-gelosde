@@ -1,0 +1,36 @@
+body{
+display: flex;
+flex-wrap: wrap;
+background-color: aquamarine;
+}
+.parede{
+    width: 4.7%;
+    height: 10px;
+    background-color: black;
+}
+.caminho{
+    
+    width: 4.7%;
+    height: 10px;
+    background-color: brown;
+}
+.inicio{
+    width: 4.7%;
+    height: 10px;
+    background-color: white;
+}
+.final{
+    
+    width: 4.7%;
+    height: 10px;
+    background-color: blue;
+
+}
+.personagem{
+    position:absolute;
+    border-radius: 50%;
+    background-color: green;
+    width: 2%;
+    height: 5px;
+    
+}
