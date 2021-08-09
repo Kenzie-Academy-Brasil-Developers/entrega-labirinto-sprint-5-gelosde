@@ -1,6 +1,5 @@
 body{
-display: flex;
-flex-wrap: wrap;
+
 background-color: aquamarine;
 }
 .parede{
@@ -9,12 +8,13 @@ background-color: aquamarine;
     background-color: black;
 }
 .caminho{
-    
+
     width: 4.7%;
     height: 10px;
     background-color: brown;
 }
 .inicio{
+
     width: 4.7%;
     height: 10px;
     background-color: white;
@@ -31,6 +31,33 @@ background-color: aquamarine;
     border-radius: 50%;
     background-color: green;
     width: 2%;
-    height: 5px;
+    height: 5px;    
+    margin-top: 0.2%;
+    margin-left: 1%;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.vitoria{
+    color: white;
+    font-size: 40px;
+    margin-left: 33%;
+}
+.novo{
+    width: 100px;
+    height: 100px;
+    margin-left: 45%;
+    margin-top: 20%;
+    border-radius: 50%;
+    background-color: tomato;
     
+}
+.reset{
+    margin-top: 2%;
+    margin-left: 40%;
+    border-radius: 30%;
+    background-color: black;
+    color: blanchedalmond;
 }
