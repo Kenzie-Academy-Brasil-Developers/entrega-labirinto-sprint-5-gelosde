@@ -41,10 +41,13 @@ function removeclic(){
 
 
 function novasdivs(){
+    sima_baixo=9;
+    direita_esquerda=0;
     let vals= map.toString();
     let cont3=0;
     vals=vals.split("");
     let caixa= document.createElement("section");
+    caixa.id='section';
     document.body.appendChild(caixa)
 
     for(let cont =0; cont<vals.length;cont++){
@@ -80,17 +83,19 @@ function novasdivs(){
     }
   
     posi[sima_baixo][direita_esquerda].appendChild(personage);
-    recomeço();
+    let dosero= document.createElement('button');
+    caixa.appendChild(dosero);
+    dosero.id= "reset";
+    dosero.innerHTML="Recomeço";
+    dosero.addEventListener("click", reset);
+   
      }
 
-
+     let contavitoria=0;
 
 
     document.addEventListener('keydown', (event) => {
         const keyName = event.key;
-        
-
-        
         let guarda_direita_esquerda =direita_esquerda;
         let guarda_sima_baixo=sima_baixo;
         if(keyName==="ArrowDown"){
@@ -114,8 +119,7 @@ function novasdivs(){
 
         }
          if(posi[sima_baixo][direita_esquerda].className ==='final'){
-          
-            venceu.innerHTML='Parabens! voce venceu!';
+            if(contavitoria===0){            venceu.innerHTML='Parabens! voce venceu!';
             sima_baixo=guarda_sima_baixo;
             direita_esquerda=guarda_direita_esquerda;
             posi[sima_baixo][direita_esquerda]
@@ -125,9 +129,10 @@ function novasdivs(){
             vitoria.className= "ganhou";
             vitoria.innerHTML="Retorne ao menu";
             vitoria.addEventListener("click", function(){
-                window.location.reload()
-                
+                window.location.reload();
             });
+        contavitoria++;} 
+
         }
       });
  function tress(){
@@ -137,10 +142,15 @@ function novasdivs(){
 function recomeço(){
     let dosero= document.createElement('button');
     document.body.appendChild(dosero);
-    dosero.className= "reset";
+    dosero.id= "reset";
     dosero.innerHTML="Recomeço";
     dosero.addEventListener("click", reset);
+   
 }
 function reset(){
-    posi[9][0].appendChild(personage); 
+document.getElementById('section').remove();
+novasdivs();
+}
+function resetb(){
+    
 }
