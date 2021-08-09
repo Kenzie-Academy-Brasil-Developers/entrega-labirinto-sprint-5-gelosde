@@ -56,8 +56,13 @@ section{
 }
 .reset{
     margin-top: 2%;
-    margin-left: 40%;
+    margin-left: 45%;
     border-radius: 30%;
     background-color: black;
     color: blanchedalmond;
+}
+.ganhou{
+    border-radius: 70%;
+    margin-top: 3%;
+    margin-left: 43.5%;
 }

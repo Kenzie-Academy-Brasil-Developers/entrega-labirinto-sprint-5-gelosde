@@ -126,6 +126,7 @@ function novasdivs(){
             vitoria.innerHTML="Retorne ao menu";
             vitoria.addEventListener("click", function(){
                 window.location.reload()
+                
             });
         }
       });
