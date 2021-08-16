@@ -108,9 +108,9 @@ const novasdivs = () =>{
         }else if(keyName==="ArrowUp"){
             sima_baixo-=1;
         }else if(keyName==="ArrowLeft"&&posi[sima_baixo][direita_esquerda].className !=='inicio'
-        &&posi[sima_baixo][direita_esquerda].className !=='final'){
+                 ||posi[sima_baixo][direita_esquerda].className !=='final'&&keyName==="ArrowLeft"){
             direita_esquerda-=1;
-        }else if(keyName==="ArrowRight"&&posi[sima_baixo][direita_esquerda].className !=='final'){
+        }else if(keyName==="ArrowRight"){
             direita_esquerda+=1;
         }
        
