@@ -20,9 +20,6 @@ const map = [
     "W       W       W   W",
     "WWWWWWWWWWWWWWWWWWWWW",
 ];
-const venceu= document.createElement('p');
-venceu.className = 'vitoria';
-document.body.appendChild(venceu);
 
 window.onload = function (){
 
@@ -108,7 +105,7 @@ const novasdivs = () =>{
         sima_baixo+=1;
         }else if(keyName==="ArrowUp"){
             sima_baixo-=1;
-        }else if(keyName==="ArrowLeft"){
+        }else if(keyName==="ArrowLeft"&&posi[sima_baixo][direita_esquerda].className !=='inicio'){
             direita_esquerda-=1;
         }else if(keyName==="ArrowRight"){
             direita_esquerda+=1;
