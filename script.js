@@ -20,7 +20,9 @@ const map = [
     "W       W       W   W",
     "WWWWWWWWWWWWWWWWWWWWW",
 ];
-
+let venceu= document.createElement('p');
+venceu.className ='vitoria'
+document.body.appendChild(venceu);
 window.onload = function (){
 
 let iniciar= document.createElement('button');
@@ -106,9 +108,9 @@ const novasdivs = () =>{
         }else if(keyName==="ArrowUp"){
             sima_baixo-=1;
         }else if(keyName==="ArrowLeft"&&posi[sima_baixo][direita_esquerda].className !=='inicio'
-                 ||posi[sima_baixo][direita_esquerda].className !=='final'&&keyName==="ArrowLeft){
+        &&posi[sima_baixo][direita_esquerda].className !=='final'){
             direita_esquerda-=1;
-        }else if(keyName==="ArrowRight"){
+        }else if(keyName==="ArrowRight"&&posi[sima_baixo][direita_esquerda].className !=='final'){
             direita_esquerda+=1;
         }
        
