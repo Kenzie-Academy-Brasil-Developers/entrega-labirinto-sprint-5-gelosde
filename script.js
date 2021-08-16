@@ -108,13 +108,11 @@ const novasdivs = () =>{
         }else if(keyName==="ArrowUp"){
             sima_baixo-=1;
         }else if(keyName==="ArrowLeft"&&posi[sima_baixo][direita_esquerda].className !=='inicio'
-                 ||posi[sima_baixo][direita_esquerda].className !=='final'&&keyName==="ArrowLeft"){
+        &&posi[sima_baixo][direita_esquerda].className !=='final'){
             direita_esquerda-=1;
-        }else if(keyName==="ArrowRight"){
+        }else if(keyName==="ArrowRight"&&posi[sima_baixo][direita_esquerda].className !=='final'){
             direita_esquerda+=1;
         }
-       
-        
         if(posi[sima_baixo][direita_esquerda].className ==='parede'){
             posi[guarda_sima_baixo][guarda_direita_esquerda].appendChild(personage);
             sima_baixo=guarda_sima_baixo;
